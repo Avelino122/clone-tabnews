@@ -1,25 +1,17 @@
-import Link from "next/link";
-import styled from "styled-components";
+import styles from "../styles/Home.module.css";
 
-const HomeTitle = styled.h1`
-  color: var(--red);
-`;
-
-function home() {
+export default function Home() {
   return (
-    <div>
-      <HomeTitle>Siga em frente</HomeTitle>
-      <h2> nunca vamos parar </h2>
-      <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        clique aqui
-      </Link>
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          Bem-vindo à minha página de apresentação!
+        </h1>
+
+        <p className={styles.description}>
+          Esta é uma página simples criada com React e Next.js
+        </p>
+      </main>
     </div>
   );
 }
-function teste() {
-  console.log("ola eu sou thierrys");
-}
-function name(params) {
-  console.log("teste .editorconfig");
-}
-export default home;
