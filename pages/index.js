@@ -10,7 +10,7 @@ function home (){
     <div>
       <HomeTitle>Siga em frente</HomeTitle>
       <h2> nunca vamos parar  </h2>
-      <Link href="https://www.instagram.com/julimotoka/">clique aqui</Link>
+      <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clique aqui</Link>
     </div>
   );
 }
