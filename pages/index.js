@@ -1,20 +1,25 @@
-import Link from 'next/link';
-import styled from 'styled-components';
+import Link from "next/link";
+import styled from "styled-components";
 
 const HomeTitle = styled.h1`
   color: var(--red);
 `;
 
-function home (){
+function home() {
   return (
     <div>
       <HomeTitle>Siga em frente</HomeTitle>
-      <h2> nunca vamos parar  </h2>
-      <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clique aqui</Link>
+      <h2> nunca vamos parar </h2>
+      <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        clique aqui
+      </Link>
     </div>
   );
 }
-
+function teste() {
+  console.log("ola eu sou thierrys");
+}
+function name(params) {
+  console.log("teste .editorconfig");
+}
 export default home;
-
-
