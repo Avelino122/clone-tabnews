@@ -8,9 +8,8 @@ const HomeTitle = styled.h1`
 function home (){
   return (
     <div>
-      <HomeTitle>Voce esta sendo vigiado</HomeTitle>
-      <h2> vc tem um prazo de uma semnana pra conseguir isso. espero que não falhe! </h2>
-      <h3> aperte em "clique"</h3>
+      <HomeTitle>Siga em frente</HomeTitle>
+      <h2> nunca vamos parar  </h2>
       <Link href="https://www.instagram.com/julimotoka/">clique aqui</Link>
     </div>
   );
