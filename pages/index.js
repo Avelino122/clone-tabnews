@@ -1,11 +1,6 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-
-const HomeTitle = styled.h1`
-  color: var(--red);
-`;
 
 function home (){
+<<<<<<< HEAD
   return (
     <div>
       <HomeTitle>Voce esta sendo vigiado</HomeTitle>
@@ -14,6 +9,9 @@ function home (){
       <Link href="https://www.instagram.com/julimotoka/">clique aqui</Link>
     </div>
   );
+=======
+  return <h1>Olá eu sou o thierry</h1>
+>>>>>>> 2d9ae16c7ac828bbd35a473e7022821697d9d6a0
 }
 
 export default home;
