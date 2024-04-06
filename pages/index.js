@@ -2,15 +2,33 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  // Estados para armazenar os valores dos inputs
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
 
-  // Função para lidar com o envio do formulário
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Previne o comportamento padrão do formulário
-    console.log("Enviando:", { nome, email });
-    // Aqui você pode adicionar a lógica para enviar os dados para um servidor, por exemplo
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:3000/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ nome, email }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data.message); // Mensagem de sucesso do servidor
+        // Aqui você pode limpar o formulário ou exibir uma mensagem de sucesso
+        setNome(""); // Limpa o campo nome
+        setEmail(""); // Limpa o campo email
+      } else {
+        console.error("Falha ao enviar os dados");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar os dados:", error);
+    }
   };
 
   return (
