@@ -1,11 +1,6 @@
-test("paramOne", () => {
-  console.log("create a test to valide a code");
-});
+const calc = require("../models/calc.js");
 
-test("paramTwo", () => {
-  console.log("heyy.... I'm thierrys");
-});
-
-test("one+one", () => {
-  expect(3).toBe(3);
+test("somar 2 + 2 = 4", () => {
+  const results = calc.somar(2, 2);
+  expect(results).toBe(4);
 });
