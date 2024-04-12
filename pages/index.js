@@ -1,14 +1,12 @@
-function home() {
+import React from "react";
+import Link from "next/link";
+
+const Home = () => {
   return (
     <div>
-      <HomeTitle>Theimy Avelino | te amo </HomeTitle>
-      <h2>seu filho querido Thierrys</h2>
-      <h3> aperte em "clique"</h3>
-      <Link href="https://www.instagram.com/p/CmNiafeLMsR5Q5qWf-2T22QJ761IVV6xusavps0/">
-        clique aqui
-      </Link>
+      <h1>Theimy Avelino, te amo!</h1>
     </div>
   );
-}
+};
 
-export default home;
+export default Home;
