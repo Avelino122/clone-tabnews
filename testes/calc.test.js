@@ -14,3 +14,13 @@ test("Somar() = Number + string  = Error", () => {
   const results = calc.somar(2, "pram2");
   expect(results).toBe("Error param2");
 });
+
+test("Somar() = Number + string  = Error", () => {
+  const results = calc.somar(2, "pram2");
+  expect(results).toBe("Error param2");
+});
+
+test("Somar() = Number + string  = Error", () => {
+  const results = calc.somar(2, "pram2");
+  expect(results).toBe("Error param2");
+});
