@@ -1,5 +1,5 @@
 function stats(request, response) {
-  response.status(208).json("{Thierrys: 200Okpa}");
+  response.status(301).json("{Thierrys: 301Okpa}");
 }
 
 export default stats;
