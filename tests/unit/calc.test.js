@@ -23,7 +23,3 @@ test("Somar() = 'param1' + empty error = empty Error", () => {
 test("one+one", () => {
   expect(3).toBe(3);
 });
-
-teste("teste", function () {
-  console.log("funcao anonima");
-});
