@@ -25,7 +25,12 @@ test("GET to /api/v1/contet should return 200", async () => {
 
   const openConnections = responseBody.open_connections;
   console.log("Open Connections:", openConnections);
-  expect(openConnections).toBeDefined();
   expect(openConnections).toBeGreaterThanOrEqual(1);
 
 });
+
+
+//test("test injection", async () => {
+// await fetch("http://localhost:3000/api/v1/status?databaseName='; SELECT  pg_sleep(4); --");
+//
+//});

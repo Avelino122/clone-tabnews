@@ -7,9 +7,12 @@ async function stats(request, response) {
   const active_connections = connects.rows[0].rolname
   const max_connect = await database.query('SHOW max_connections;')
   const pqmax_connect = max_connect.rows[0].max_connections
-  const open_connections = await database.query(
-    "SELECT count(*)::int FROM pg_stat_activity WHERE datname = 'db_do_Thierrys';"
-  )
+  const dbNameThierrys = process.env.POSTGRES_DB;
+  const open_connections = await database.query({
+    text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;",
+    values: [dbNameThierrys]
+  });
+
   const filterOpenConnect = open_connections.rows[0].count
 
   console.log(connects)
@@ -19,6 +22,7 @@ async function stats(request, response) {
   console.log(open_connections)
 
   console.log(filterOpenConnect)
+  console.log(`db: ${dbNameThierrys}`)
 
   response.status(200).json({
     update_time: update_at,
