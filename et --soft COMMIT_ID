@@ -1,0 +1,56 @@
+[33md57a517[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Adicionado .gitignore e removidos arquivos desnecessários do repositório
+[33mde3d243[m new portifolio
+[33m4f8ba5f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m new credentials prd
+[33mdc7a27f[m working in logs in node.js
+[33made09b2[m study about injections sql  `/api/v1/status/index.js`
+[33m1819eca[m Update README.md
+[33md5c9841[m Update README.md
+[33m55b6ccd[m Update `README.md`
+[33maf27d6a[m teste .gitignore  `.next`
+[33m6dcbeb4[m update values in api  `/api/v1/status/index.js`
+[33mbe0cf5a[m testando  `.gitignore`
+[33mee27bf0[m retorno api real values `get.teste.js` `/api/v1/index.js`
+[33mce87ff7[m update  scripts to automate   `package.json`
+[33ma60d4cf[m update imports  `jsconfig.js`
+[33m0f48e32[m update file  `.env.development`
+[33m49f142b[m env variable/create db Thierrys/Docker `compose.yaml`
+[33m8b6f8a3[m add .env in project `database.js`
+[33m23a95bc[m create table with script in js `database.js`
+[33m7ad9c99[m add `postgres compose`
+[33m3d658b5[m Thierrys
+[33m333cc9c[m fix archive test with status code api
+[33mf3e0ddd[m Eu bem sei
+[33mdd9d94a[m Status-api
+[33m345c6fd[m fix
+[33m0b3f2d6[m fix test error/ add logic if in function somar
+[33m27774a3[m fix calc / create teste to validate a code
+[33mbb0012c[m exporta calc para fora do modulos
+[33m31eacc3[m fix code to revie = code
+[33m208bb8a[m fix --jexst
+[33m6f8b5ed[m instala jest
+[33mf39aab2[m fix
+[33m8f2f1aa[m teste2
+[33m0896a42[m teste
+[33m6463ac3[m envia dados
+[33m3b4a3ea[m fix folders
+[33mec3ad59[m Update - Thierry Avelino
+[33md91e904[m update repo
+[33md94eb85[m descobrindo React
+[33m2010f36[m atualizando arqruivos da home
+[33mce67895[m Prettier updates uso do `.editorconfig`
+[33mc1fb1db[m Lança editor config
+[33meea49dd[m fixar url
+[33mc993f3e[m fixar conteudo html
+[33m71c31eb[m Ajuste de titulo
+[33m73e9aee[m Thierry Avelino
+[33mc838b88[m Thierry
+[33m4ef93cb[m adiciona pages Thierry Avelino
+[33m2d9ae16[m adiciona pages Thierry Avelino
+[33med6facb[m usando o .gitignore
+[33m4e41048[m vai manifest
+[33m021b288[m Sua mensagem de commit aqui
+[33mc5be99b[m vai arquivo de manifeto
+[33m20fe87b[m subindo arquivos de manifesto
+[33m6a9b255[m comitando usando amend
+[33mbd34807[m adiciona o git .gitignore amend
+[33mec6cffc[m Initial commit
