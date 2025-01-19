@@ -1,2 +1,20 @@
+# Node.js modules
+node_modules/
+
+# Logs
+*.log
+
+# Build outputs
 .next/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE configurations
+.vscode/
+.idea/
+*.iml
 node_modules/
