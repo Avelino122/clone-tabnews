@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tech-blue: #1d3557;
+  --tech-light-blue: #457b9d;
+  --tech-sky-blue: #a8dadc;
+  --tech-off-white: #f1faee;
+  --tech-red: #e63946;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--tech-off-white);
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: var(--tech-red);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, var(--tech-blue), #17293f);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: rgba(168, 218, 220, 0.2);
+  color: var(--tech-blue);
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
